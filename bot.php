@@ -7,8 +7,8 @@ $update = file_get_contents($website."/getUpdates");
 
 $update_array = json_decode($update, TRUE);
 
-$text =  $update_array["result"][0]["message"]["text"];
+$chat_id =  $update_array["result"][0]["message"]["chat"]["id"];
 
-print_r($text);
+file_get_contents($website."/sendMessage?chat_id=".$chat_id."&text=test");
 
 ?>
