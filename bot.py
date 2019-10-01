@@ -12,7 +12,7 @@ def findat(text):
 
 @bot.message_handler(commands = ['start'])
 def send_welcome(message):
-	bot.reply_to(message, 'Hey Sanju! Epdi iruka?')
+	bot.reply_to(message, 'Hey there!')
 
 @bot.message_handler(commands = ['help'])
 def send_welcome(message):
